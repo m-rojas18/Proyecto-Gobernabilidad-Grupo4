@@ -1,0 +1,42 @@
+### Test API Redmine
+@key = gT1_gRupo04
+
+
+### List issues
+GET https://npr3s.com/control/projects/gti-1265-1167/issues.json
+
+
+### Prueba POSt
+POST https://npr3s.com/control/projects/gti-1265-1167/issues.json
+Content-Type: application/application/json
+X-Redmine-API-Key: {{key}}
+{
+    "issue": {
+        "subject": "Prueba REST Client Grupo 4",
+        "description": "Descripcion de prueba",
+        "start_date": "2023-06-17",
+        "id": "118",
+        "project": {
+            "id": "19",`
+            "name": "GTI-1265,1167"
+        },
+        "tracker": {
+            "id": 1,
+            "name": "Bug"
+        },
+        "status": {
+            "id": 1,
+            "name": "New",
+            "is_closed": false
+        },
+         "priority": {
+            "id": 2,
+            "name": "Normal"
+        },
+        "author": {
+            "id": 34,
+            "name": "Grupo 4 GTI"
+      },
+
+    }
+}
