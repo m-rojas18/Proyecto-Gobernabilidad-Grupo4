@@ -1,0 +1,26 @@
+.principal{
+     
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     
+}
+.cajaCentral{
+    background-color: cadetblue;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.entradaPeticion{
+    width: 30%;
+    height: 30%;
+}
+.Sendbt{
+    margin-top: 5%;
+    width: 30%;
+    height: 10%;
+    font-size: 25px;
+}
