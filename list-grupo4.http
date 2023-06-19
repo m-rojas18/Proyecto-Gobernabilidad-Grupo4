@@ -1,42 +1,29 @@
-### Test API Redmine
+### Grupo 4
+### Test API redmine
 @key = gT1_gRupo04
-
-
 ### List issues
-GET https://npr3s.com/control/projects/gti-1265-1167/issues.json
+//Se tiene que pasar las credenciales a base64(GTI_Grupo_4:gT1_gRupo04)
+GET https://npr3s.com/control/projects/gti-1265-1167/issues.xml
+Authorization: Basic R1RJX0dydXBvXzQ6Z1QxX2dSdXBvMDQ=
 
 
-### Prueba POSt
+###Prueba de POST - agregar nuevo issue
 POST https://npr3s.com/control/projects/gti-1265-1167/issues.json
-Content-Type: application/application/json
-X-Redmine-API-Key: {{key}}
+Content-Type: application/json
+Authorization: Basic R1RJX0dydXBvXzQ6Z1QxX2dSdXBvMDQ=
+
 {
     "issue": {
-        "subject": "Prueba REST Client Grupo 4",
-        "description": "Descripcion de prueba",
-        "start_date": "2023-06-17",
-        "id": "118",
-        "project": {
-            "id": "19",`
-            "name": "GTI-1265,1167"
-        },
-        "tracker": {
-            "id": 1,
-            "name": "Bug"
-        },
-        "status": {
-            "id": 1,
-            "name": "New",
-            "is_closed": false
-        },
-         "priority": {
-            "id": 2,
-            "name": "Normal"
-        },
-        "author": {
-            "id": 34,
-            "name": "Grupo 4 GTI"
-      },
-
+        "project_id": 19,
+        "tracker_id": 1,
+        "status_id": 1,
+        "priority_id": 1,
+        "subject": "Prueba POST Rest Client - Grupo4",
+        "description": "Prueba simple de comando POST",
+        "start_date": "2023-06-18"
     }
 }
+
+### Obtener datos de Issue creado 
+GET https://npr3s.com/control/projects/gti-1265-1167/issues.xml?issue_id=234
+Authorization: Basic R1RJX0dydXBvXzQ6Z1QxX2dSdXBvMDQ=
