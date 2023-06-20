@@ -5,8 +5,13 @@
      position: absolute;
      
 }
+.text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .cajaCentral{
-    background-color: cadetblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+    background-color: rgb(73, 62, 172);
     height: 100%;
     width: 100%;
     display: flex;
@@ -15,11 +20,30 @@
     flex-direction: column;
 }
 .entradaPeticion{
-    width: 30%;
-    height: 30%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    float:right;
+    width: 400px;
+    height: 180px;
+    border-radius: 25px;
+    padding: 20px;
+    resize: none;
+   
+}
+
+
+.image{
+    float:left;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+   
 }
 .Sendbt{
+    border-radius: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 5%;
+    border-color:  rgb(73, 62, 172);
     width: 30%;
     height: 10%;
     font-size: 25px;
