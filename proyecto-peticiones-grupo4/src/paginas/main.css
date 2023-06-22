@@ -40,6 +40,7 @@
    
 }
 .Sendbt{
+    
     border-radius: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 5%;
@@ -47,4 +48,8 @@
     width: 30%;
     height: 10%;
     font-size: 25px;
+}
+
+.Sendbt:hover{
+    background-color:  aquamarine;
 }
